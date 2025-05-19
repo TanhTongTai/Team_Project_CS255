@@ -15,6 +15,7 @@ public:
 	void setNumSeat(int);
 	void fuelConsumption() override;
 	void displayInf() override;
+	friend ostream& operator << (ostream&, Car&);
 	~Car() override;
 };
 
