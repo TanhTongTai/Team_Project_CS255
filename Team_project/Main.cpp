@@ -77,6 +77,7 @@ int main() {
             if (v1 && v2) {
                 cout << "\n";
                 cus.comparePrice(v1, v2);
+                cout << endl;
             }
             else {
                 cout << "Invalid indices.\n" << endl;

@@ -66,7 +66,7 @@ bool Vehicle::operator>(const Vehicle& q) const
 	return this->price > q.price;
 }
 
-bool Vehicle::operator=(const Vehicle& r) const
+bool Vehicle::operator==(const Vehicle& r) const
 {
 	if (this->price == r.price) {
 		return true;

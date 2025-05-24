@@ -22,7 +22,7 @@ public:
 	virtual void displayInf();
 	bool operator < (const Vehicle&) const;
 	bool operator > (const Vehicle&) const;
-	bool operator = (const Vehicle&) const;
+	bool operator == (const Vehicle&) const;
 	bool operator < (double) const;
 	virtual ~Vehicle();
 };
