@@ -83,8 +83,8 @@ int main() {
             }
         }
     } while (choice != 4);
-
-    cout << "Customer has bought: " << endl;
+    cout << "---------------------------------------" << endl;
+    cout << "\nCustomer has bought: " << endl;
     for (int i = 0; i < cus.getSize(); i++) {
         cus.getBought(i)->displayInf();
     }
