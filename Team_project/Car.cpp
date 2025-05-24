@@ -27,19 +27,14 @@ void Car::fuelConsumption()
 
 void Car::displayInf()
 {
-	cout << "Car's information: " << this->getBrand() << " " << this->getModel() << " " << this->getPrice() << " " << color << endl;
+	cout << "Car's information: Brand: " << this->getBrand()
+		<< " -- Model: " << this->getModel()
+		<< " -- Price: $" << this->getPrice()
+		<< " -- Color: " << color
+		<< " -- Number of Seats: " << this->getNumSeat() << endl;
 }
 
 Car::~Car()
 {
 }
 
-ostream& operator<<(ostream& os, Car& car)
-{
-	os << "The brand: " << car.getBrand() << endl;
-	os << "The model: " << car.getModel() << endl;
-	os << "The price: " << car.getPrice() << endl;
-	os << "The color: " << car.color << endl;
-	os << "Number of seats: " << car.numSeat << endl;
-	return os;
-}

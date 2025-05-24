@@ -27,19 +27,13 @@ void Motorbike::fuelConsumption()
 
 void Motorbike::displayInf()
 {
-    cout << "Bike's information: " << this->getBrand() << " " << this->getModel() << " " << this->getPrice() << " " << engineType << endl;
+    cout << "Bike's information: Brand: " << this->getBrand()
+        << " -- Model: " << this->getModel()
+        << " -- Price: $" << this->getPrice()
+        << " -- Engine type: " << engineType << endl;
 }
 
 Motorbike::~Motorbike()
 {
 }
 
-ostream& operator<<(ostream& out, Motorbike& bike)
-{
-    out << "The brand: " << bike.getBrand() << endl;
-    out << "The model: " << bike.getModel() << endl;
-    out << "The price: " << bike.getPrice() << endl;
-    out << "The color: " << bike.engineType << endl;
-    out << "Number of seats: " << bike.maxSpeed << endl;
-    return out;
-}

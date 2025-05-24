@@ -33,6 +33,9 @@
     <ClCompile Include="GarageOwner.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Truck.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vehicle.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GarageOwner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Truck.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -5,7 +5,7 @@ using namespace std;
 
 GarageOwner::GarageOwner(string name, int size) {
     this->name = name;
-    this->size = size; // current amount of vehicles
+    this->size = size; // current number of vehicles
     this->vehicles = new Vehicle * [100];
 }
 
@@ -19,13 +19,13 @@ void GarageOwner::addVehicles(Vehicle* v) {
 }
 
 void GarageOwner::showGarage() const {
-    cout << "List of available vehicles" << endl;
+    cout << "_____ List of available vehicles _____\n" << endl;
     if (size == 0) {
         cout << "list is empty!" << endl;
         return;
     }
     for (int i = 0; i < size; i++) {
-        cout << i << ". ";
+        cout << i + 1 << ".";
         vehicles[i]->displayInf();
         // 1. xyz
     }
@@ -63,7 +63,7 @@ Vehicle* GarageOwner::sellVehicle(int index) {
     size--;
     return vehicleSold; // for Customer class to add to bought list
 }
-
+int GarageOwner::getVehicleCount() { return size; }
 GarageOwner::~GarageOwner() {
     for (int i = 0; i < size; i++) {
         delete vehicles[i];
