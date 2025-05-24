@@ -17,7 +17,7 @@ int main() {
     owner.addVehicles(new Car("Honda", "Civic", 22000.0, "Blue", 5));
     owner.addVehicles(new Motorbike("Honda", "F3", 2000, "150", 200));
 
-    Customer cus("Team 11");
+    Customer cus("Team 11 ");
     int choice;
     do {
         cout << "Welcome to our Garage\n";
